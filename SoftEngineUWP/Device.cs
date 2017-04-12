@@ -133,7 +133,7 @@ namespace SoftEngineUWP
         {
             // To understand this part, please read the prerequisites resources
             var viewMatrix = Matrix4x4.CreateLookAt(camera.Position, camera.Target, Vector3.UnitY);
-            var projectionMatrix = Matrix4x4.CreatePerspective(0.78f, (float)bmp.PixelWidth / bmp.PixelHeight, 0.01f, 1.0f);
+            var projectionMatrix = Matrix4x4.CreatePerspective(3, 4, 0.4f, 10.0f);
 
             foreach (Mesh mesh in meshes)
             {
