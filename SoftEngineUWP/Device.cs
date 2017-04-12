@@ -52,10 +52,10 @@ namespace SoftEngineUWP
             // on the 2D coordinates on screen
             var index = (x + y * bmp.PixelWidth) * 4;
 
-            backBuffer[index] = (byte)(color.B * 255);
-            backBuffer[index + 1] = (byte)(color.G * 255);
-            backBuffer[index + 2] = (byte)(color.R * 255);
-            backBuffer[index + 3] = (byte)(color.A * 255);
+            backBuffer[index] = color.B;
+            backBuffer[index + 1] = color.G;
+            backBuffer[index + 2] = color.R;
+            backBuffer[index + 3] = color.A;
         }
 
         // Project takes some 3D coordinates and transform them
